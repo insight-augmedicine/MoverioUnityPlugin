@@ -1,9 +1,8 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\MoverioController\Scripts\Utils\AccelRotator.cs">
+  <MonoDevelop.Ide.Workspace />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\MoverioController\Scripts\SceneScripts\MoverioTutorialController.cs">
     <Files>
-      <File FileName="Assets\MoverioController\Scripts\Camera3Dmode.cs" Line="79" Column="50" />
-      <File FileName="Assets\MoverioController\Scripts\Utils\AccelRotator.cs" Line="1" Column="1" />
+      <File FileName="Assets\MoverioController\Scripts\SceneScripts\MoverioTutorialController.cs" Line="12" Column="3" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

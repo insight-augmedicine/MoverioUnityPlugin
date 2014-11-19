@@ -5,6 +5,7 @@ public class MoverioTutorialController : MonoBehaviour {
 
 	public GUIText TextView;
 
+
 	void Start () 
 	{
 		TextView.text = "Welcome to the Tutorial!";
@@ -32,13 +33,15 @@ public class MoverioTutorialController : MonoBehaviour {
 		yield return new WaitForSeconds(2.0f);
 
 		MoverioController.Instance.SetDisplay3D(true);
-		
+
+
 		TextView.text = "3D Mode on!";
 		
 
-		yield return new WaitForSeconds(3.0f);
+		yield return new WaitForSeconds(6.0f);
 
 		MoverioController.Instance.SetDisplay3D(false);
+
 		
 		TextView.text = "3D Mode off!";
 		

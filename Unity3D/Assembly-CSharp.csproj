@@ -50,10 +50,10 @@
      <Compile Include="Assets\MoverioController\Scripts\MoverioCameraController.cs" />
      <Compile Include="Assets\MoverioController\Scripts\MoverioController.cs" />
      <Compile Include="Assets\MoverioController\Scripts\Note.cs" />
-     <Compile Include="Assets\MoverioController\Scripts\SceneScripts\AccelRotator.cs" />
      <Compile Include="Assets\MoverioController\Scripts\SceneScripts\MoverioTutorialController.cs" />
      <Compile Include="Assets\MoverioController\Scripts\SceneScripts\spin.cs" />
-     <None Include="Assets\MoverioController\Manifest\AndroidManifest.xml" />
+     <Compile Include="Assets\MoverioController\Scripts\Utils\AccelRotator.cs" />
+     <None Include="Assets\Plugins\Android\AndroidManifest.xml" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files (x86)/Unity4.6F2/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.0/UnityEngine.UI.dll</HintPath>
  </Reference>

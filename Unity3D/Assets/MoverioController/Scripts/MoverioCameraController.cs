@@ -17,9 +17,9 @@ public class MoverioCameraController : MonoBehaviour {
 		}
 	}
 
-	public Camera LeftEyeCam, RightEyeCam, Cam2D;
+	public GameObject StereoCamera, Cam2D;
 
-	public float PupillaryDistance = 0.05f;
+	//public float PupillaryDistance = 0.05f;
 
 	MoverioDisplayType _displayState;
 
@@ -30,16 +30,16 @@ public class MoverioCameraController : MonoBehaviour {
 
 	void Start()
 	{
-		SetPupillaryDistance(PupillaryDistance);
+		//SetPupillaryDistance(PupillaryDistance);
 	}
 
-	public void SetPupillaryDistance(float pDist)
-	{
-		PupillaryDistance = pDist;
+	//public void SetPupillaryDistance(float pDist)
+	//{
+		//PupillaryDistance = pDist;
 
-		LeftEyeCam.transform.localPosition = new Vector3(-PupillaryDistance, 0.0f, 0.0f);
-		RightEyeCam.transform.localPosition = new Vector3(PupillaryDistance, 0.0f, 0.0f);
-	}
+		//StereoCamera.transform.localPosition = new Vector3(-PupillaryDistance, 0.0f, 0.0f);
+		//StereoCamera.transform.localPosition = new Vector3(PupillaryDistance, 0.0f, 0.0f);
+	//}
 
 	void OnEnable()
 	{
@@ -77,12 +77,12 @@ public class MoverioCameraController : MonoBehaviour {
 		switch(_displayState)
 		{
 		case MoverioDisplayType.Display2D:
-			LeftEyeCam.enabled = RightEyeCam.enabled = false;
-			Cam2D.enabled = true;
+			StereoCamera.SetActive (false);
+			Cam2D.SetActive (true);
 			break;
 		case MoverioDisplayType.Display3D:
-			LeftEyeCam.enabled = RightEyeCam.enabled = true;
-			Cam2D.enabled = false;
+			StereoCamera.SetActive (true);
+			Cam2D.SetActive (false);
 			break;
 		}
 	}
