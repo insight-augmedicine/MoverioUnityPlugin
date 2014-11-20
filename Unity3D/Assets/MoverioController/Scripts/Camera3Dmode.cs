@@ -24,6 +24,13 @@ public class Camera3Dmode : MonoBehaviour {
 	
 	// Use this for initialization
 	void Start () {
+		//We will manipulate the projection matrix and change the cameras' parameters. 
+		//Since the inspector-entered Field of View of the Right and Left cameras does nothing, 
+		//we will set these programatically from the parent camera to avoid confusing the user. 
+		//The next two lines do nothing important programatically.
+		rightCamera.fieldOfView = FOV;
+		leftCamera.fieldOfView = FOV;
+
 
 		//Equations for projection matrix determined experimentally. 
 

@@ -381,6 +381,10 @@ Prefab:
       propertyPath: field of view
       value: 13.6000004
       objectReference: {fileID: 0}
+    - target: {fileID: 11400006, guid: 1b2dcb737dec4df49a63d24444d89ef1, type: 2}
+      propertyPath: FOV
+      value: 13.6000004
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1b2dcb737dec4df49a63d24444d89ef1, type: 2}
   m_RootGameObject: {fileID: 144937163}
