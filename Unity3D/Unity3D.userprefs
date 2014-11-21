@@ -1,10 +1,8 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\MoverioController\Scripts\Camera3Dmode.cs">
+  <MonoDevelop.Ide.Workspace />
+  <MonoDevelop.Ide.Workbench ActiveDocument="..\..\..\Users\mavas_000\Desktop\UnityPaint\Assets\Scripts\Mathfx.js">
     <Files>
-      <File FileName="Assets\MoverioController\Scripts\SceneScripts\MoverioTutorialController.cs" Line="40" Column="3" />
-      <File FileName="Assets\MoverioController\Scripts\MoverioCameraController.cs" Line="42" Column="4" />
-      <File FileName="Assets\MoverioController\Scripts\Camera3Dmode.cs" Line="23" Column="41" />
+      <File FileName="..\..\..\Users\mavas_000\Desktop\UnityPaint\Assets\Scripts\Mathfx.js" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

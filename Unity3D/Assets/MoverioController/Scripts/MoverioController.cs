@@ -31,7 +31,7 @@ public class MoverioController : MonoBehaviour {
 	public delegate void MoverioEvent(MoverioEventType type);
 	public static event MoverioEvent OnMoverioStateChange;
 
-	public int InitialScreenBrightness = 20;
+	[Range(1, 20)]public int InitialScreenBrightness = 20;
 
 	public MoverioDisplayType InitialDisplayMode = MoverioDisplayType.Display2D;
 

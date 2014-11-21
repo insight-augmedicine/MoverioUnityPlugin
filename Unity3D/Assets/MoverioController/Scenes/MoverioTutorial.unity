@@ -327,7 +327,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400004, guid: 1b2dcb737dec4df49a63d24444d89ef1, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 2.0999999
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 1b2dcb737dec4df49a63d24444d89ef1, type: 2}
       propertyPath: m_LocalPosition.y
@@ -567,7 +567,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 1198336460}
   - 20: {fileID: 1198336461}
-  - 114: {fileID: 1198336462}
   m_Layer: 0
   m_Name: LeftEye
   m_TagString: Untagged
@@ -581,7 +580,7 @@ Transform:
   m_PrefabParentObject: {fileID: 400002, guid: 1b2dcb737dec4df49a63d24444d89ef1, type: 2}
   m_PrefabInternal: {fileID: 662344315}
   m_GameObject: {fileID: 1198336459}
-  m_LocalRotation: {x: 0, y: .0436197668, z: 0, w: -.999048233}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -3.45000005, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -620,21 +619,6 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: .0219999999
---- !u!114 &1198336462
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400004, guid: 1b2dcb737dec4df49a63d24444d89ef1,
-    type: 2}
-  m_PrefabInternal: {fileID: 662344315}
-  m_GameObject: {fileID: 1198336459}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6830b6582a52ddd4990865c90bd8458e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  title: FOV notice
-  note: 'To change the FOV of this camera use the FOV slider of the parent "StereoscopicCamera".
-    Changing the FOV of this camera component will not change the FOV. '
 --- !u!1 &1228675376
 GameObject:
   m_ObjectHideFlags: 0
@@ -659,7 +643,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1228675376}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.89999998, y: 0, z: -45.4000015}
+  m_LocalPosition: {x: 0, y: 0, z: -45.4000015}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1670421282}
@@ -872,7 +856,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1626928459
 Transform:
   m_ObjectHideFlags: 0
@@ -942,7 +926,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 1670421282}
   - 114: {fileID: 1670421286}
-  - 114: {fileID: 1670421285}
   m_Layer: 0
   m_Name: StereoscopicCamera
   m_TagString: Untagged
@@ -957,27 +940,13 @@ Transform:
   m_PrefabInternal: {fileID: 662344315}
   m_GameObject: {fileID: 1670421281}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.0999999, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2138375650}
   - {fileID: 1198336460}
   m_Father: {fileID: 1228675377}
   m_RootOrder: 0
---- !u!114 &1670421285
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: 1b2dcb737dec4df49a63d24444d89ef1,
-    type: 2}
-  m_PrefabInternal: {fileID: 662344315}
-  m_GameObject: {fileID: 1670421281}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6830b6582a52ddd4990865c90bd8458e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  title: Field of View.
-  note: Change FOV here only.
 --- !u!114 &1670421286
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1046,7 +1015,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 2138375650}
   - 20: {fileID: 2138375652}
-  - 114: {fileID: 2138375651}
   m_Layer: 0
   m_Name: RightEye
   m_TagString: Untagged
@@ -1060,27 +1028,12 @@ Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 1b2dcb737dec4df49a63d24444d89ef1, type: 2}
   m_PrefabInternal: {fileID: 662344315}
   m_GameObject: {fileID: 2138375649}
-  m_LocalRotation: {x: 0, y: .0479782447, z: 0, w: -.998848379}
+  m_LocalRotation: {x: 0, y: -.00436330959, z: 0, w: .999990523}
   m_LocalPosition: {x: 3.45000005, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1670421282}
   m_RootOrder: 0
---- !u!114 &2138375651
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400002, guid: 1b2dcb737dec4df49a63d24444d89ef1,
-    type: 2}
-  m_PrefabInternal: {fileID: 662344315}
-  m_GameObject: {fileID: 2138375649}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6830b6582a52ddd4990865c90bd8458e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  title: FOV notice
-  note: To change the FOV of this camera use the FOV slider of the parent "StereoscopicCamera".
-    Changing the FOV of this camera component will not change the FOV.  here!
 --- !u!20 &2138375652
 Camera:
   m_ObjectHideFlags: 0
